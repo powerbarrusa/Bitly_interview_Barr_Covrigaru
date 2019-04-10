@@ -68,10 +68,12 @@ body {
   width: 50%;
   margin-left: 25%;
   margin-top: 20px;
+  text-align: left;
 }
 
 .resultstext {
   color: #ee6123;
+  font-family: Helvetica;
 }
 
 .bars {
@@ -80,4 +82,6 @@ body {
 
 .long {
   color: #444444;
+  font-size: 14px;
+  font-family: Helvetica;
 }
