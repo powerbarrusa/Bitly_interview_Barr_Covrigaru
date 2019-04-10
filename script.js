@@ -20,17 +20,27 @@ function bitly() {
     button.addEventListener("click", (e) => {
       e.preventDefault()
       bitlySDK.shorten(field).then(function(short){
+        console.log(short)
         let shortened = []
+        let long = []
         shortened.push(short.url)  
+        long.push(short.long_url)
         for (let i = 0; i < shortened.length; i++){
           const table = document.querySelector(".table")
-          const addRow = document.createElement("div")
+          const addShort = document.createElement("div")
           const image = document.createElement("img")
           image.src = "./click-icon.svg"
           image.className = "bars"
-          addRow.innerText = shortened[i]
-          table.appendChild(addRow)
+          addShort.innerText = shortened[i]
+          table.appendChild(addShort)
           table.appendChild(image)
+        }
+        for (let j = 0; j < long.length; j++){
+          const table = document.querySelector(".table")
+          const addLong = document.createElement("div")
+          addLong.className = "long"
+          addLong.innerText = long[j]
+          table.appendChild(addLong)
         }
       })
     })
