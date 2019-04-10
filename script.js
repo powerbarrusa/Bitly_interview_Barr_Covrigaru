@@ -23,12 +23,14 @@ function bitly() {
         let shortened = []
         shortened.push(short.url)  
         for (let i = 0; i < shortened.length; i++){
-          const table = document.querySelector("table")
-          const addRow = document.createElement("tr")
-          const addData = document.createElement("td")
-          addData.innerText = shortened[i]
-          addRow.appendChild(addData)
+          const table = document.querySelector(".table")
+          const addRow = document.createElement("div")
+          const image = document.createElement("img")
+          image.src = "./click-icon.svg"
+          image.className = "bars"
+          addRow.innerText = shortened[i]
           table.appendChild(addRow)
+          table.appendChild(image)
         }
       })
     })

@@ -38,8 +38,6 @@ body {
 
 .inputgroup {
   margin-top: 50px;
-  /* margin-left: 65%;
-  width: 75%; */
 }
 
 .inputfield {
@@ -61,4 +59,21 @@ body {
   font-size: 11px;
   width: 125px;
   height: 60px;
+}
+
+.results {
+  background-color: white;
+  font-family: Helvetica;
+  color: #ee6123;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.resultstext {
+  color: #ee6123;
+}
+
+.bars {
+  height: 25px;
 }
